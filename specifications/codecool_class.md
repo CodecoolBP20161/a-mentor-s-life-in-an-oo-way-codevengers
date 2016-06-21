@@ -20,6 +20,12 @@ None
 * ```students```
   * data type: list (containing Student objects)
   * description: stores the students of the class
+* ```leisure_events```
+  * data type: list (containing Leisure objects)
+  * description: stores the leisure events of the class
+* ```private_mentoring_events```
+  * data type: list (containing PrivateMentoring objects)
+  * description: stores the private mentoring events of the class
 
 ## Class methods
 
@@ -66,3 +72,12 @@ Gives back a student with the same full name as the argument from ```students```
 
 #### Return value
 ```Mentor``` object
+
+### ```feedback```
+Modifies ```motivation_level``` and ```knowledge_level```.
+
+#### Arguments
+None
+
+#### Return value
+None
