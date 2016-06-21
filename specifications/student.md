@@ -35,7 +35,7 @@ All of the arguments of parent class and the class itself.
 None
 
 ### ```learn```
-Modify the level of student's level of knowledge, energy and motivation.
+Modify the level of the student's level of knowledge, energy and motivation.
 
 #### Arguments
 None
