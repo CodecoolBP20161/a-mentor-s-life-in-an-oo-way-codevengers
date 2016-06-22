@@ -25,6 +25,7 @@ class Mentor(Person):
         self.nickname = nickname
         self.energy_level = None
 
+    @staticmethod
     def do_morning_gym(students, mentors):
         for student in students:
             if student.energy_level < 10:
@@ -38,6 +39,7 @@ class Mentor(Person):
                 mentor.energy_level += 10
         return students, mentors
 
+    @staticmethod
     def daily_agenda(students):
         for student in students:
             if studied_level:
@@ -45,12 +47,14 @@ class Mentor(Person):
             else:
                 students.motivation_level -= 10
 
-    def mentoring(student):
+    def mentoring(self, student):
         student.happy = True
         student.knowledge_level += 10
         student.motivation_level += 10
         student.energy_level -= 10
+        self.motivation_level += 5
 
+    @staticmethod
     def interview(candidate, mentors):
         candidate_in_school = True
         choice = 0
