@@ -17,7 +17,7 @@ Person
   * data type: integer
   * description: stores the student's level of energy
 
-* ```studied_level```
+* ```studied```
   * data type: boolean
   * description: stores the fact that the student did study or not
 
@@ -42,7 +42,7 @@ The constructor of the object.
 
 ### Arguments
 
-All of the arguments of parent class and the class itself.
+All of the arguments of parent class.
 
 #### Return value
 None
@@ -51,7 +51,9 @@ None
 Modify the level of the student's level of knowledge, energy and motivation.
 
 #### Arguments
-None
+
+List of objects of the ```Student``` class.
 
 #### Return value
-None
+
+List of objects of the ```Student``` class.
