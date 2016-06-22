@@ -4,7 +4,7 @@
 This class represents the new candidates, who applies to CodeCool.
 
 ## Parent class
-Event
+Person
 
 ## Attributes
 
