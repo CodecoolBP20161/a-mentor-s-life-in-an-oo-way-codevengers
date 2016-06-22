@@ -2,7 +2,6 @@ import random
 from person import Person
 
 class Mentor(Person):
-
     @classmethod
     def create_by_csv(cls, file_name):
         import csv
@@ -43,6 +42,7 @@ class Mentor(Person):
                 students.motivation_level += 10
             else:
                 students.motivation_level -= 10
+        return students
 
     def mentoring(self, student):
         student.happy = True
@@ -50,6 +50,7 @@ class Mentor(Person):
         student.motivation_level += 10
         student.energy_level -= 10
         self.motivation_level += 5
+        return student
 
     @staticmethod
     def interview(candidate, mentors):
@@ -60,3 +61,4 @@ class Mentor(Person):
         if choice == 3:
             accepted = True
             candidate.motivation_level += 10
+        return candidate
