@@ -32,8 +32,8 @@ class Student(Person):
                 studied = False
             else:
                 studied = True
-            if studied == True:
+            if studied:
                 student.knowledge_level += 10
                 student.energy_level -= 10
-                student.motivation_level +=10
+                student.motivation_level += 10
         return students
