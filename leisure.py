@@ -3,8 +3,8 @@ from event import Event
 
 
 class Leisure(Event):
-    def __init__(self, name, time, place, length, attendants):
-        super().__init__(name, time, place, length, attendants)
+    def __init__(*args, **kwargs):
+        super().__init__(*args, **kwargs)
 
     def do_event(self):
         for attendant in attendants:
