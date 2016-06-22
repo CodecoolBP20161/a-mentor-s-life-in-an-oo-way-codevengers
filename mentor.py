@@ -1,12 +1,14 @@
 import random
 from person import Person
+from codecool_class import CodecoolClass
+from student import Student
+from candidate import Candidates
 
 
 class Mentor(Person):
 
     @classmethod
     def create_by_csv(cls, file_name):
-        import csv
         with open(file_name) as csvfile:
             mentors = csv.reader(csvfile,  delimiter=';')
             mentors_list = []
@@ -53,7 +55,7 @@ class Mentor(Person):
         candidate_in_school = True
         choice = 0
         for mentor in mentors:
-            choice += random.randrange(2)
+            choice += random.randrange(0, 2)
         if choice == 3:
             accepted = True
             candidate.motivation_level += 10
