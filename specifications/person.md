@@ -34,17 +34,7 @@ None
 
 None
 
-## Instance methods
-
-### ```__init__```
-The constructor of the object.
-
-#### Arguments
-
-All of the arguments of the class itself.
-
-#### Return value
-None
+## Static methods
 
 ### ```come_to_school```
 
@@ -67,3 +57,15 @@ Modify the boolean in_school, happy, motivation_level, studied attributes for st
 * ```students```
   * data type: list (containing Student objects)
   * description: stores the students of the class
+
+## Instance methods
+
+### ```__init__```
+The constructor of the object.
+
+#### Arguments
+
+All of the arguments of the class itself.
+
+#### Return value
+None
