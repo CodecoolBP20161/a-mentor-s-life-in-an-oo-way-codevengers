@@ -22,6 +22,19 @@ Person
   * description: stores the fact that the student did study or not
 
 
+## Class methods
+
+### ```create_by_csv```
+Read persons attributes from the csv files.
+
+### Arguments
+
+The csv file's name.
+
+### Return value
+
+List of ```Student``` objects.
+
 ## Instance methods
 
 ### ```__init__```
