@@ -48,11 +48,22 @@ None
 
 ### ```come_to_school```
 
-Modify the boolean in_school attribute.
+Modify the boolean in_school, happy, motivation_level, studied attributes for students and mentors as well.
 
 #### Arguments
-None
+
+* ```mentors```
+   * data type: list (containing Mentor objects)
+   * description: stores the mentors of the class
+* ```students```
+  * data type: list (containing Student objects)
+  * description: stores the students of the class
 
 #### Return value
 
-None
+* ```mentors```
+   * data type: list (containing Mentor objects)
+   * description: stores the mentors of the class
+* ```students```
+  * data type: list (containing Student objects)
+  * description: stores the students of the class
