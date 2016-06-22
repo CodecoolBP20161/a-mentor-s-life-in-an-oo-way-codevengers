@@ -7,8 +7,8 @@ class CodecoolClass:
     @classmethod
     def generate_local(cls):
         local_class = cls("Budapest", 2016)
-        mentors = Mentor.create_by_csv("/data/mentors.csv")
-        students = Student.create_by_csv("/data/students.csv")
+        mentors = Mentor.create_by_csv("./data/mentors.csv")
+        students = Student.create_by_csv("./data/students.csv")
         for mentor in mentors:
             local_class.mentors.append(Mentor(mentor[0], mentor[1],
                                               mentor[2], mentor[3],

@@ -1,6 +1,5 @@
 from event import Event
-from student import Student
-from mentor import Mentor
+
 
 class PrivateMentoring(Event):
     def __init__(self, students, mentor, *args, *kwargs):

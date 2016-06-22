@@ -1,5 +1,4 @@
 import random
-from codecoool_class import CodecooolClass
 
 
 class Person:
