@@ -25,18 +25,7 @@ Reads Person attributes as a csv file
 
 A list of mentor
 
-
-## Instance methods
-
-### ```__init__```
-The constructor of the object.
-
-#### Arguments
-
-All of the arguments of the class itself.
-
-#### Return value
-None
+## Static methods
 
 ### ```do_morning_gym```
 
@@ -67,18 +56,6 @@ Tells the daily agenda and increases the ```motivation_level```
 #### Return value
 None
 
-### ```mentoring```
-
-Helps a student to understand the know-how of the magic called programming and this makes the student ```Happy```, increases ```knowledge_level``` and ```motivation_level``` while decreasing ```energy_level```
-
-#### Arguments
-* ```student```
-    * data type: object
-    * description: holds the object of a student
-
-#### Return value
-None
-
 ### ```interview```
 Performs a quick and decisive talk with an instance of the ```Candidate```.
 Sets the value of ```candidate_in_school``` to True.
@@ -91,6 +68,30 @@ If the mentors accept the candidate, (they all roll one) the candidates ```self.
 * ```mentors```
     * data type: list
     * description: holds the objects of mentors
+
+#### Return value
+None
+
+## Instance methods
+
+### ```__init__```
+The constructor of the object.
+
+#### Arguments
+
+All of the arguments of the class itself.
+
+#### Return value
+None
+
+### ```mentoring```
+
+Helps a student to understand the know-how of the magic called programming and this makes the student ```Happy```, increases ```knowledge_level``` and ```motivation_level``` while decreasing ```energy_level```
+
+#### Arguments
+* ```student```
+    * data type: object
+    * description: holds the object of a student
 
 #### Return value
 None
