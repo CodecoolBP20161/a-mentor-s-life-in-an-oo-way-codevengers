@@ -35,14 +35,12 @@ Executes morning gym if ```energy_level``` is low for the instances of students 
 * ```students```
     * data type: list
     * description: contains the instances of every student
-
-
 * ```mentors```
     * data type: list
     * description: contains the instances of every mentor
 
 #### Return value
-None
+students, mentors
 
 ### ```daily_agenda```
 
@@ -54,7 +52,7 @@ Tells the daily agenda and increases the ```motivation_level```
     * description: contains the instances of every student
 
 #### Return value
-None
+students
 
 ### ```interview```
 Performs a quick and decisive talk with an instance of the ```Candidate```.
@@ -70,7 +68,7 @@ If the mentors accept the candidate, (they all roll one) the candidates ```self.
     * description: holds the objects of mentors
 
 #### Return value
-None
+candidate
 
 ## Instance methods
 
@@ -94,4 +92,4 @@ Helps a student to understand the know-how of the magic called programming and t
     * description: holds the object of a student
 
 #### Return value
-None
+student
