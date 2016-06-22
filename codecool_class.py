@@ -1,8 +1,5 @@
 from mentor import Mentor
 from student import Student
-from event import Event
-from private_mentoring import PrivateMentoring
-from leisure import Leisure
 
 
 class CodecoolClass:
