@@ -16,13 +16,13 @@ and slightly decrease their ```energy_level```.
 * The ```lunch``` ```leisure_events``` refill the ```energy_level```.
 * After ```lunch``` the ```student```s continue to ```learn``` with the ```mentoring``` help of one ```Mentor```.
 * The second ```Mentor``` does ```private_mentoring_events``` which sets
-the attending ```Student```s ```come_to_school``` value ```True``` and increases
+the attending ```Student```s ```in_school``` value ```True``` and increases
 their ```knowledge_level```.
-* The third ```Mentor``` does ```interview``` which sets ```Candidate```s' ```come_to_school``` ```True```,
+* The third ```Mentor``` does ```interview``` which sets ```Candidate```s' ```in_school``` value ```True```,
 checks their ```application_code``` and decides whether they are ```accepted``` or not.
 * When all these events finished, ```leisure_events``` are initiated, where ```Mentor```s
 and ```Student```s attend randomly. This increases their ```motivation_level```.
-* Then they all go home and set their ```come_to_school``` value to ```False``` and
+* Then they all go home and set their ```in_school``` value to ```False``` and
 refill their ```energy_level```.
 
 The End.
