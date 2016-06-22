@@ -7,9 +7,9 @@ class Person:
         self.last_name = last_name
         self.year_of_birth = year_of_birth
         self.gender = gender
-        motivation_level = random.randint(0, 100)
-        in_school = False
-        happy = False
+        self.motivation_level = random.randint(0, 100)
+        self.in_school = False
+        self.happy = False
 
     @staticmethod
     def come_to_school(students, mentors):
@@ -24,10 +24,11 @@ class Person:
             if i == 0 and count < 2:
                 student.in_school = False
                 count += 1
-                student.happy = True
-                student.motivation_level = random.randint(1, 100)
-                student.studied = bool(random.randint(0, 1))
-                student.energy_level = random.randint(1, 100)
             else:
                 student.in_school = True
+                student.happy = True
+                student.motivation_level = random.randint(1, 100)
+                student.knowledge_level = random.randint(1, 100)
+                student.studied = bool(random.randint(0, 1))
+                student.energy_level = random.randint(1, 100)
         return students, mentors

@@ -38,7 +38,7 @@ class Mentor(Person):
     @staticmethod
     def daily_agenda(students):
         for student in students:
-            if studied:
+            if student.studied:
                 student.motivation_level += 10
             else:
                 student.motivation_level -= 10

@@ -2,8 +2,8 @@ from event import Event
 
 
 class PrivateMentoring(Event):
-    def __init__(self, students, mentor, *args, *kwargs):
-        super().__init__(*args, *kwargs)
+    def __init__(self, students, mentor, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         self.students = students
         self.mentor = mentor
 
