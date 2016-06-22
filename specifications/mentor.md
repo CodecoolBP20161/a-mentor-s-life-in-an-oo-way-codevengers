@@ -10,9 +10,6 @@ Mentor class inherits from Person class
 * ```nickname```
     * data type: string
     * description: stores the nickname of each mentor
-* ```energy_level```
-    * data type: integer
-    * description: stores the current energy level of each mentor
 
 ## Class methods
 
@@ -46,12 +43,12 @@ None
 Executes morning gym if ```energy_level``` is low for the instances of students and mentors
 
 #### Arguments
-* ```CodecoolClass.students```
+* ```students```
     * data type: list
     * description: contains the instances of every student
 
 
-* ```CodecoolClass.mentors```
+* ```mentors```
     * data type: list
     * description: contains the instances of every mentor
 
@@ -63,7 +60,7 @@ None
 Tells the daily agenda and increases the ```motivation_level```
 
 #### Arguments
-* ```Student```
+* ```students```
     * data type: list
     * description: contains the instances of every student
 
@@ -75,7 +72,7 @@ None
 Helps a student to understand the know-how of the magic called programming and this makes the student ```Happy```, increases ```knowledge_level``` and ```motivation_level``` while decreasing ```energy_level```
 
 #### Arguments
-* ```Student```
+* ```student```
     * data type: object
     * description: holds the object of a student
 
@@ -85,12 +82,15 @@ None
 ### ```interview```
 Performs a quick and decisive talk with an instance of the ```Candidate```.
 Sets the value of ```candidate_in_school``` to True.
-If the mentors accept the candidate, the ```self.motivation_level``` increases, otherwise decreases.
+If the mentors accept the candidate, (they all roll one) the candidates ```self.motivation_level``` increases, otherwise decreases.
 
 #### Arguments
 * ```candidate```
     * data type: object
     * description: holds the object of a candidate
+* ```mentors```
+    * data type: list
+    * description: holds the objects of mentors
 
 #### Return value
 None
