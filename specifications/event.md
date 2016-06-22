@@ -12,11 +12,14 @@ None
   * data type: string
   * description: stores the name of the event
 * ```time```
-  * data type: object
-  * description: stores a datetime object when event starts
+  * data type: string
+  * description: stores that, when event starts
+* ```place```
+  * data type: string
+  * description: stores where is the event being held
 * ```length```
-   * data type: integer
-   * description: stores the length of the event in hours
+  * data type: integer
+  * description: stores the length of the event in hours
 * ```attendants```
   * data type: list
   * description: stores the attendants of the event
