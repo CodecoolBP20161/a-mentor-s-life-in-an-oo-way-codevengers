@@ -1,14 +1,11 @@
 import random
 from person import Person
-from codecool_class import CodecoolClass
-from student import Student
-from candidate import Candidates
-
 
 class Mentor(Person):
 
     @classmethod
     def create_by_csv(cls, file_name):
+        import csv
         with open(file_name) as csvfile:
             mentors = csv.reader(csvfile,  delimiter=';')
             mentors_list = []
