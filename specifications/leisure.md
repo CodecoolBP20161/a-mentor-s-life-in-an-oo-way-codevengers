@@ -32,4 +32,4 @@ Modify the happiness, motivation and energy level.
 None
 
 #### Return value
-```leisure_events``` list with ```Leisure``` objects
+```attendants``` list with ```Student``` and ```Mentor``` objects

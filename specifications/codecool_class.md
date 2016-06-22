@@ -20,12 +20,6 @@ None
 * ```students```
   * data type: list (containing Student objects)
   * description: stores the students of the class
-* ```leisure_events```
-  * data type: list (containing Leisure objects)
-  * description: stores the leisure events of the class
-* ```private_mentoring_events```
-  * data type: list (containing PrivateMentoring objects)
-  * description: stores the private mentoring events of the class
 
 ## Class methods
 
@@ -47,7 +41,7 @@ The constructor of the object.
 
 #### Arguments
 
-All of the arguments of the class itself.
+```location``` and ```year```
 
 #### Return value
 None
