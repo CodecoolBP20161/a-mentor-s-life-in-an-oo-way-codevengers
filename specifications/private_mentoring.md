@@ -38,4 +38,4 @@ Do the specific event (an instance of the class).
 None
 
 #### Return value
-```private_mentoring_events``` list with ```PrivateMentoring``` objects
+None
