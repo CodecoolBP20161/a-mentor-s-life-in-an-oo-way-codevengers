@@ -71,7 +71,7 @@ Gives back a student with the same full name as the argument from ```students```
 Modifies ```motivation_level``` and ```knowledge_level```.
 
 #### Arguments
-None
+list of ```Student``` objects
 
 #### Return value
 list of ```Student``` objects
