@@ -3,7 +3,7 @@ from event import Event
 
 
 class Leisure(Event):
-    def __init__(*args, **kwargs):
+    def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
     @staticmethod

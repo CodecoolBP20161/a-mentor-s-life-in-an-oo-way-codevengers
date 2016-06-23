@@ -24,14 +24,15 @@ class Student(Person):
         self.energy_level = None
         self.studied = None
 
+    @staticmethod
     def learn(students):
         for student in students:
             study = random.randrange(2)
             if study == 0:
-                studied = False
+                student.studied = False
             else:
-                studied = True
-            if studied:
+                student.studied = True
+            if student.studied:
                 student.knowledge_level += 10
                 student.energy_level -= 10
                 student.motivation_level += 10
