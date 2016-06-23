@@ -36,15 +36,14 @@ class CodecoolClass:
             if full_name == mentor_full_name:
                 return mentor
 
-    def feedback(self):
-        for student in self.students:
-            if student.in_school:
-                student.motivation_level += 10
-                student.energy_level += 10
-                student.happy = True
+    def feedback(self, students):
+        for student in students:
+            student.motivation_level += 10
+            student.energy_level += 10
+            student.happy = True
 
         for mentor in self.mentors:
             mentor.motivation_level += 10
             mentor.happy = True
 
-        return self.students
+        return students
