@@ -105,6 +105,29 @@ print('%s does private mentoring and %s interviews the new applicants.'
 
 input()
 
+
+private_mentoring = PrivateMentoring(students_in_school[3], codecool_bp.mentors[1], 'private mentoring', '13:00', 'Codecool Office', 0.5)
+print("%s helps %s in a private mentoring session.\n%s's motivation increases\
+ to %s, their knowledge increases to %s and their energy slightly decreases\
+ to %s." % (private_mentoring.mentor.first_name, private_mentoring.students.first_name,
+      private_mentoring.students.first_name, private_mentoring.students.motivation_level,
+      private_mentoring.students.knowledge_level, private_mentoring.students.energy_level))
+print("%s's energy level slightly decreases to %s but he feels the success, so \
+his motivation increases to %d and his happiness is %s."
+      % (private_mentoring.mentor.first_name, private_mentoring.mentor.energy_level,
+      private_mentoring.mentor.motivation_level, private_mentoring.mentor.happy))
+
+input()
+
+candidate = Candidate('4ildu', 'Bela', 'Toth', 1991, 'Male')
+candidate = Mentor.interview(candidate, codecool_bp.mentors)
+if candidate.accepted:
+    print("%s's (%s) interview was successful! Their motivation level increased, what is %s now."
+          % (candidate.first_name, candidate.application_code, candidate.motivation_level))
+else:
+    print("%s's (%s) interview was unsuccessful! :(" % (candidate.first_name, candidate.application_code))
+input()
+
 print('Feedback session time!')
 students_in_school = codecool_bp.feedback(students_in_school)
 for i, student in enumerate(students_in_school):
@@ -113,3 +136,34 @@ for i, student in enumerate(students_in_school):
 for i, mentor in enumerate(codecool_bp.mentors):
     print("The feedback changed %s (%s)'s motivation level to %d and happiness to %s"
           % (mentor.first_name, mentor.nickname, mentor.motivation_level, mentor.happy))
+
+input()
+yoga_students = [codecool_bp.find_student_by_full_name('Dávid Fehér'),
+                 codecool_bp.find_student_by_full_name('Péter Pomsár')]
+for student in yoga_students:
+    if not student.in_school:
+        student.in_school = True
+        student.happy = True
+        student.motivation_level = random.randint(1, 100)
+        student.knowledge_level = random.randint(1, 100)
+        student.studied = bool(random.randint(0, 1))
+        student.energy_level = random.randint(1, 100)
+yoga = Leisure('yoga', '15:30', 'Codecool Office', 1, [[codecool_bp.find_mentor_by_full_name('Tamás Tompa')], yoga_students])
+print('At %s some people of the class have %s at the %s.' % (yoga.time, yoga.name, yoga.place))
+for attendant in yoga.attendants:
+    attendants = Leisure.do_event(attendant)
+for attendant in yoga.attendants:
+    for person in attendant:
+        print('During yoga, the motivation level of %s changed to %d and his energy level changed to %d.'
+              % (person.first_name, person.motivation_level, person.energy_level))
+print('And everybody is happy now :)')
+
+input()
+
+print('At the end of the day everybody goes home.')
+for student in students_in_school:
+    student.in_school = False
+    print("%s in school: %s" % (student.first_name, student.in_school))
+for mentor in codecool_bp.mentors:
+    mentor.in_school = False
+    print("%s in school: %s" % (mentor.first_name, mentor.in_school))
