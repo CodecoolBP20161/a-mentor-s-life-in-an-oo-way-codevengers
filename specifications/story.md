@@ -22,7 +22,6 @@ their ```knowledge_level```.
 checks their ```application_code``` and decides whether they are ```accepted``` or not.
 * When all these events finished, ```leisure_events``` are initiated, where ```Mentor```s
 and ```Student```s attend randomly. This increases their ```motivation_level```.
-* Then they all go home and set their ```in_school``` value to ```False``` and
-refill their ```energy_level```.
+* Then they all go home and set their ```in_school``` value to ```False```.
 
 The End.
