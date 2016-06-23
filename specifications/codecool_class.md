@@ -74,4 +74,4 @@ Modifies ```motivation_level``` and ```knowledge_level```.
 None
 
 #### Return value
-None
+list of ```Student``` objects
