@@ -14,7 +14,7 @@ set ```Student```s' ```studied_level``` ```True``` and increase the ```motivatio
 * The ```Student```s ```learn``` which increases their ```knowledge_level```
 and slightly decrease their ```energy_level```.
 * The ```lunch``` ```leisure_events``` refill the ```energy_level```.
-* After ```lunch``` the ```student```s continue to ```learn``` with the ```mentoring``` help of one ```Mentor```.
+* After ```lunch``` the ```student```s continue to ```learn``` with the ```mentoring``` help of one ```Mentor``` and they have a ```feedback``` session.
 * The second ```Mentor``` does ```private_mentoring_events``` which sets
 the attending ```Student```s ```in_school``` value ```True``` and increases
 their ```knowledge_level```.
