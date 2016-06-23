@@ -15,5 +15,5 @@ class PrivateMentoring(Event):
             student.energy_level -= 5
 
         self.mentor.happy = True
-        self.mentor.motivation_level += 150
+        self.mentor.motivation_level += 15
         self.mentor.energy_level -= 5

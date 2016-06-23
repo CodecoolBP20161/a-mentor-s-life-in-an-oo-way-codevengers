@@ -54,11 +54,11 @@ class Mentor(Person):
 
     @staticmethod
     def interview(candidate, mentors):
-        candidate_in_school = True
+        candidate.in_school = True
         choice = 0
         for mentor in mentors:
             choice += random.randrange(0, 2)
-        if choice == 3:
-            accepted = True
+        if choice > 1:
+            candidate.accepted = True
             candidate.motivation_level += 10
         return candidate

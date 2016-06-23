@@ -11,11 +11,11 @@ class CodecoolClass:
         students = Student.create_by_csv("./data/students.csv")
         for mentor in mentors:
             local_class.mentors.append(Mentor(mentor[0], mentor[1],
-                                              mentor[2], mentor[3],
+                                              int(mentor[2]), mentor[3],
                                               mentor[4]))
         for student in students:
             local_class.students.append(Student(student[0], student[1],
-                                                student[2], student[3]))
+                                                int(student[2]), student[3]))
         return local_class
 
     def __init__(self, location, year):
