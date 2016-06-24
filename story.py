@@ -197,5 +197,5 @@ for mentor in codecool_bp.mentors:
     print("\033[93m%s\033[0m in school: \033[93m%s\033[0m" % (mentor.first_name, mentor.in_school))
 
 print('\033[92m\nThis was the story of an average day at Codecool Budapest. \n\
-We hope you enjoyed our little presentation and we could set your motivation value sky high \
-and your happiness to True! :)\033[0m')
+We hope you enjoyed our little presentation and we could \
+\nset your motivation value sky high and your happiness to True! :)\033[0m')
