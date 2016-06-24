@@ -19,7 +19,8 @@ input()
 
 print('\033[92mThe mentors arrive first:\033[0m')
 for mentor in codecool_bp.mentors:
-    print('\033[93m%s\033[0m (\033[93m%s\033[0m) arrived: \033[93m%s\033[0m' % (mentor.first_name, mentor.nickname, mentor.in_school))
+    print('\033[93m%s\033[0m (\033[93m%s\033[0m) arrived: \033[93m%s\033[0m'
+          % (mentor.first_name, mentor.nickname, mentor.in_school))
 
 print('\033[92m\nMost of the students came to school this morning:\033[0m')
 students_in_school = []
@@ -30,7 +31,8 @@ for student in codecool_bp.students:
 
 input()
 
-print('\033[93m%s\033[0m (\033[93m%s\033[0m) \033[92msenses low energy level among the students and initiates some exercises.\033[0m'
+print('\033[93m%s\033[0m (\033[93m%s\033[0m) \033[92msenses low energy level \
+among the students and initiates some exercises.\033[0m'
       % (codecool_bp.find_mentor_by_full_name('Miklós Beöthy').first_name,
          codecool_bp.find_mentor_by_full_name('Miklós Beöthy').nickname))
 default_energy = []
@@ -124,8 +126,9 @@ input()
 
 private_mentoring = PrivateMentoring(students_in_school[3], codecool_bp.mentors[1],
                                      'private mentoring', '13:00', 'Codecool Office', 0.5)
-print("\033[93m%s\033[0m helps \033[93m%s\033[0m in a private mentoring session.\n\033[93m%s\033[0m's motivation increases\
- to \033[93m%s\033[0m, their knowledge increases to \033[93m%s\033[0m and their energy slightly decreases\
+print("\033[93m%s\033[0m helps \033[93m%s\033[0m in a private mentoring session.\
+\n\033[93m%s\033[0m's motivation increases to \033[93m%s\033[0m, \
+their knowledge increases to \033[93m%s\033[0m and their energy slightly decreases\
  to \033[93m%s\033[0m." % (private_mentoring.mentor.first_name, private_mentoring.students.first_name,
       private_mentoring.students.first_name, private_mentoring.students.motivation_level,
       private_mentoring.students.knowledge_level, private_mentoring.students.energy_level))
@@ -139,19 +142,23 @@ input()
 candidate = Candidate('4ildu', 'Bela', 'Toth', 1991, 'Male')
 candidate = Mentor.interview(candidate, codecool_bp.mentors)
 if candidate.accepted:
-    print("\033[93m%s\033[0m's (\033[93m%s\033[0m) interview was successful! His motivation level increased to \033[93m%s\033[0m."
+    print("\033[93m%s\033[0m's (\033[93m%s\033[0m) interview was successful! \
+His motivation level increased to \033[93m%s\033[0m."
           % (candidate.first_name, candidate.application_code, candidate.motivation_level))
 else:
-    print("\033[93m%s\033[0m's (\033[93m%s\033[0m) interview was unsuccessful! :(" % (candidate.first_name, candidate.application_code))
+    print("\033[93m%s\033[0m's (\033[93m%s\033[0m) interview was unsuccessful! :("
+          % (candidate.first_name, candidate.application_code))
 input()
 
 print('\033[92mFeedback session time!\033[0m')
 students_in_school = codecool_bp.feedback(students_in_school)
 for i, student in enumerate(students_in_school):
-    print("The feedback changed \033[93m%s\033[0m's motivation level to \033[93m%d\033[0m and happiness to \033[93m%s\033[0m"
+    print("The feedback changed \033[93m%s\033[0m's motivation level to\
+ \033[93m%d\033[0m and happiness to \033[93m%s\033[0m"
           % (student.first_name, student.motivation_level, student.happy))
 for i, mentor in enumerate(codecool_bp.mentors):
-    print("The feedback changed \033[93m%s\033[0m (\033[93m%s\033[0m)'s motivation level to \033[93m%d\033[0m and happiness to \033[93m%s\033[0m"
+    print("The feedback changed \033[93m%s\033[0m (\033[93m%s\033[0m)'s motivation level to \
+    \033[93m%d\033[0m and happiness to \033[93m%s\033[0m"
           % (mentor.first_name, mentor.nickname, mentor.motivation_level, mentor.happy))
 
 input()
