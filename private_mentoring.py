@@ -7,13 +7,15 @@ class PrivateMentoring(Event):
         self.students = students
         self.mentor = mentor
 
-    def do_event(self):
-        for student in self.students:
+    @staticmethod
+    def do_event(students, mentor):
+        for student in students:
             student.happy = True
             student.knowledge_level += 10
             student.motivation_level += 10
             student.energy_level -= 5
 
-        self.mentor.happy = True
-        self.mentor.motivation_level += 15
-        self.mentor.energy_level -= 5
+        mentor.happy = True
+        mentor.motivation_level += 15
+        mentor.energy_level -= 5
+        return students, mentor

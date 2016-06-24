@@ -126,6 +126,9 @@ input()
 
 private_mentoring = PrivateMentoring(students_in_school[3], codecool_bp.mentors[1],
                                      'private mentoring', '13:00', 'Codecool Office', 0.5)
+mentored_student = None
+awesome_mentor = None
+mentored_student, awesome_mentor = PrivateMentoring.do_event([students_in_school[3]], codecool_bp.mentors[1])
 print("\033[93m%s\033[0m helps \033[93m%s\033[0m in a private mentoring session.\
 \n\033[93m%s\033[0m's motivation increases to \033[93m%s\033[0m, \
 their knowledge increases to \033[93m%s\033[0m and their energy slightly decreases\
@@ -138,6 +141,7 @@ his motivation increases to \033[93m%d\033[0m and his happiness is \033[93m%s\03
          private_mentoring.mentor.motivation_level, private_mentoring.mentor.happy))
 
 input()
+
 
 candidate = Candidate('4ildu', 'Bela', 'Toth', 1991, 'Male')
 candidate = Mentor.interview(candidate, codecool_bp.mentors)
@@ -158,7 +162,7 @@ for i, student in enumerate(students_in_school):
           % (student.first_name, student.motivation_level, student.happy))
 for i, mentor in enumerate(codecool_bp.mentors):
     print("The feedback changed \033[93m%s\033[0m (\033[93m%s\033[0m)'s motivation level to \
-    \033[93m%d\033[0m and happiness to \033[93m%s\033[0m"
+\033[93m%d\033[0m and happiness to \033[93m%s\033[0m"
           % (mentor.first_name, mentor.nickname, mentor.motivation_level, mentor.happy))
 
 input()
